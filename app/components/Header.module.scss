@@ -1,0 +1,61 @@
+$primary-color: #111418;
+$accent-color: #b8cee4;
+$border-color: #eaedf0;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 40px;
+    border-bottom: 1px solid $border-color;
+    background-color: #fff;
+    font-family: 'Work Sans', 'Noto Sans', sans-serif;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: $primary-color;
+}
+
+.logoIcon {
+    width: 16px;
+    height: 16px;
+}
+
+.logoText {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav {
+    display: flex;
+    gap: 36px;
+
+    a {
+        text-decoration: none;
+        color: $primary-color;
+        font-size: 0.875rem;
+        font-weight: 500;
+    }
+}
+
+.quoteButton {
+    padding: 0 16px;
+    height: 40px;
+    background-color: $accent-color;
+    color: $primary-color;
+    font-weight: bold;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    white-space: nowrap;
+}
