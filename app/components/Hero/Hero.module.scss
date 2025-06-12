@@ -1,0 +1,42 @@
+.hero {
+    background-image: url('/images/hero.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    display: flex;
+    position: relative;
+    padding: 6rem 2rem;
+    color: white;
+    position: relative;
+    border-radius: 12px;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 600px;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.overlay p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.overlay button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #fff;
+    color: #333;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: 600;
+}

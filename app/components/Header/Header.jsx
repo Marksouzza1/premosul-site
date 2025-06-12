@@ -1,4 +1,4 @@
-import styles from "@/app/components/Header.module.scss";
+import styles from "@/app/components/Header/Header.module.scss";
 import Logo from "@/public/images/Logo-Premolsul.png"
 import Image from "next/image";
 export default function Header() {

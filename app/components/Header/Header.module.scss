@@ -1,6 +1,7 @@
 $primary-color: #111418;
 $accent-color: #b8cee4;
 $border-color: #eaedf0;
+$quote-button: #1A78E5;
 
 .header {
     display: flex;
@@ -50,8 +51,8 @@ $border-color: #eaedf0;
 .quoteButton {
     padding: 0 16px;
     height: 40px;
-    background-color: $accent-color;
-    color: $primary-color;
+    background-color: $quote-button;
+    color: white;
     font-weight: bold;
     font-size: 0.875rem;
     border: none;

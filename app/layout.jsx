@@ -1,5 +1,7 @@
 import { Geist, Geist_Mono, Imprima } from "next/font/google";
-import  Header  from "@/app/components/Header.jsx";
+import Footer from "./components/Footer/index.jsx";
+import Hero from "@/app/components/Hero/index.jsx"
+import Header from "@/app/components/Header/Header.jsx";
 import "@/app/styles/global.scss"
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +26,9 @@ export default function RootLayout({ children }) {
     <html lang="pt-br">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
-        <Header/>
+        <Header />
+        <Hero />
+        <Footer />
       </body>
     </html>
   );
