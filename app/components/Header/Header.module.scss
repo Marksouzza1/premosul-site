@@ -7,27 +7,25 @@ $quote-button: #1A78E5;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 12px 40px;
+    padding: 12px 20px;
     border-bottom: 1px solid $border-color;
     background-color: #fff;
+    position: sticky;
     font-family: 'Work Sans', 'Noto Sans', sans-serif;
+    top: 0;
+    z-index: 1000;
 }
 
 .logoContainer {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 8px;
     color: $primary-color;
 }
 
 .logoIcon {
     width: 16px;
     height: 16px;
-}
-
-.logoText {
-    font-size: 1.125rem;
-    font-weight: 700;
 }
 
 .navContainer {
@@ -59,4 +57,39 @@ $quote-button: #1A78E5;
     border-radius: 12px;
     cursor: pointer;
     white-space: nowrap;
+}
+
+@media (max-width: 767px) {
+    .header {
+        padding: 12px 20px;
+    }
+
+    .logoContainer {
+        gap: 8px;
+    }
+
+    .navContainer {
+        gap: 8px;
+
+        .nav,
+        .quoteButton {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header {
+        padding: 12px 30px;
+    }
+
+    .nav {
+        gap: 24px;
+    }
+
+    .quoteButton {
+        padding: 0 12px;
+        height: 36px;
+        font-size: 0.8rem;
+    }
 }

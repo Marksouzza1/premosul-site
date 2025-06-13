@@ -24,12 +24,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-br">
+      <Header />
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
-        <Header />
-        <Hero />
-        <Footer />
       </body>
+      <Footer />
     </html>
   );
 }

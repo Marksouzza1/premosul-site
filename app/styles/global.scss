@@ -4,6 +4,7 @@ body {
     margin: 0;
     font-family: 'Work Sans', 'Noto Sans', sans-serif;
 }
+
 @media (prefers-colors-scheme: dark) {
     html {
         color-scheme: dark;
@@ -14,4 +15,14 @@ body {
         background: black;
     }
 
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+
+    @media (min-width: 1400px) {
+        padding: 0 2rem;
+    }
 }
