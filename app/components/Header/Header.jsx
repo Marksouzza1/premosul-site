@@ -1,7 +1,10 @@
+'use client'
 import styles from "@/app/components/Header/Header.module.scss";
 import Logo from "@/public/images/Logo-Premolsul.png"
 import Image from "next/image";
+import { useState } from "react";
 export default function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
     return (
         <header className={styles.header}>
             <div className={styles.logoContainer}>
@@ -13,6 +16,12 @@ export default function Header() {
                     alt="Logo premolsul"
                 />
             </div>
+
+            <button
+                className={styles.hamburger}
+                onClick={() => setIsMenuOpen(!isMenuOpen)}
+                aria-label="Abrir menu"
+            >☰</button>
             <div className={styles.navContainer}>
                 <nav className={styles.nav}>
                     <a href="#">Serviços</a>
