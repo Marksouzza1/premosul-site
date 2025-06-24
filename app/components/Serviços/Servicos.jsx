@@ -6,19 +6,19 @@ import Image from "next/image";
 export default function Servicos() {
     const cards = [
         {
-            src: "/images/servico1.jpg",
+            src: "/images/servico1.jpeg",
             alt: "Construção de galpão pré-moldado",
             title: "Galpões Industriais",
             description: "Eficiência e resistência para projetos de grande porte."
         },
         {
-            src: "/images/servico2.jpg",
+            src: "/images/servico2.png",
             alt: "Casas geminadas modernas",
             title: "Casas Geminadas",
             description: "Conforto, economia e aproveitamento inteligente do espaço urbano."
         },
         {
-            src: "/images/servico3.jpg",
+            src: "/images/servico3.jpeg",
             alt: "Soluções residenciais completas",
             title: "Projetos Personalizados",
             description: "Adaptamos nossos pré-moldados às suas necessidades."
