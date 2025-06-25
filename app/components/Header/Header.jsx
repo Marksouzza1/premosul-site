@@ -2,9 +2,26 @@
 import styles from "@/app/components/Header/Header.module.scss";
 import Logo from "@/public/images/Logo-Premolsul.png"
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const handleNavLinkClick = () => {
+        setIsMenuOpen(false);
+    };
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth > 1023) {
+                setIsMenuOpen(false);
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
+
     return (
         <header className={styles.header}>
             <div className={styles.logoContainer}>
@@ -22,16 +39,18 @@ export default function Header() {
                 onClick={() => setIsMenuOpen(!isMenuOpen)}
                 aria-label="Abrir menu"
             >☰</button>
-            <div className={styles.navContainer}>
+            <div className={`${styles.navContainer} ${isMenuOpen ? styles.showMenu : ''}`}>
                 <nav className={styles.nav}>
-                    <a href="#">Serviços</a>
-                    <a href="#">Projetos</a>
-                    <a href="#">Sobre nós</a>
-                    <a href="#">Contato</a>
+                    <a href="#servicos" onClick={handleNavLinkClick}>Serviços</a>
+                    <a href="#projetos" onClick={handleNavLinkClick}>Projetos</a> 
+                    <a href="#contato" onClick={handleNavLinkClick}>Contato</a>
                 </nav>
-                <button className={styles.quoteButton}>
+                <a
+                    href="https://wa.me/5547996490392"
+                    className="quoteButton"
+                    target="blank_">
                     <span>Faça um orçamento</span>
-                </button>
+                </a>
             </div>
         </header>
     );

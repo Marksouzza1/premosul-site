@@ -1,0 +1,40 @@
+.Container {
+    text-align: center;
+    padding: 60px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.Button {
+    padding: 15 30px;
+    background-color: #1A78E5;
+    color: white;
+    font-weight: bold;
+    font-size: 0.875rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    text-decoration: none;
+    align-items: center;
+}
+
+.socialIcons {
+    display: flex; // Usa flexbox para alinhar os ícones lado a lado
+    justify-content: center; // Centraliza os ícones horizontalmente
+    align-items: center; // Centraliza os ícones verticalmente (se tiverem alturas diferentes)
+    gap: 20px; // Espaçamento entre os ícones
+    margin-top: 20px; // Espaçamento acima dos ícones em relação ao botão
+}
+
+/* NOVO: Estilos para os ícones individuais */
+.socialIcon {
+    color: #555; // Cor padrão dos ícones (um cinza escuro)
+    transition: color 0.3s ease, transform 0.2s ease; // Transição suave para hover
+
+    &:hover {
+        color: #1A78E5; // Cor no hover (ex: o azul do seu botão)
+        transform: translateY(-3px); // Efeito de "levantar" no hover
+    }
+}

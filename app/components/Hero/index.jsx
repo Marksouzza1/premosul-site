@@ -14,7 +14,7 @@ export default function Hero() {
                     Especialistas em construção de casas geminadas e estruturas pré-moldadas. Qualidade, agilidade e economia para seu projeto.
                 </p>
                 <div className={styles.buttons}>
-                    <a href="#contato" className={styles.primaryButton}>Solicitar Orçamento</a>
+                    <a href="https://wa.me/5547996490392" className={styles.primaryButton}>Solicitar Orçamento</a>
                     <a href="#projetos" className={styles.secondaryButton}>Ver Projetos</a>
                 </div>
             </div>

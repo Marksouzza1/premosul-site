@@ -26,13 +26,15 @@ export default function Servicos() {
     ];
 
     return (
-        <section className={styles.services}>
+        <section
+            id="servicos"
+            className={styles.services}>
             <div className={styles.header}>
-                <h2 className={styles.title}>
-                    Soluções Premol Sul para Você
+                <h2 className="title">
+                    Soluções PremolSul para Você
                 </h2>
-                <p className={styles.subtitle}>
-                    Na Premol Sul, oferecemos soluções completas e eficientes para cada tipo de construção, garantindo que seu projeto seja entregue com qualidade e no prazo certo.
+                <p className="subtitle">
+                    Na PremolSul, oferecemos soluções completas e eficientes para cada tipo de construção, garantindo que seu projeto seja entregue com qualidade e no prazo certo.
                 </p>
             </div>
             <div className={styles.grid}>
@@ -42,7 +44,7 @@ export default function Servicos() {
                             <Image
                                 src={card.src}
                                 alt={card.alt}
-                                width={403}
+                                width={350}
                                 height={250}
                                 className={styles.image}
                             />
